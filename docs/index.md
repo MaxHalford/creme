@@ -4,10 +4,14 @@ title: Welcome
     <img src="img/creme.svg" width="60%">
 </div>
 
-# Welcome!
+## creme + scikit-multiflow = River
 
-`creme` is a Python library for [online machine learning](https://www.wikiwand.com/en/Online_machine_learning). All the tools in the library can be updated with a single observation at a time, and can therefore be used to learn from streaming data. This is general-purpose library, and therefore caters to different machine learning problems, including regression, classification, and unsupervised learning.
+[creme](https://MaxHalford.github.io/) and [scikit-multiflow](https://scikit-multiflow.github.io/) are merging into a new project called [River](https://github.com/online-ml/river/).
 
-We recommend that new users begin with the [getting started guide](getting-started.md). Afterwards, you can check out the [user guide](user-guide/reading-data) to learn how to properly use `creme`. It contains recipes and tutorials on how to go about doing specific tasks. The [API reference](api-reference/overview) is a catalogue of all the available modules, classes, and functions that are available. Finally, check out the [examples section](examples/batch-to-online) for comprehensive usage examples.
+We feel that both projects share the same vision. We believe that pooling our resources instead of duplicating work will benefit both sides. We are also confident that this will benefit both communities. There will be more people working on the new project, which will allow us to distribute work more efficiently. We will thus be able to work on more features and improve the overall quality of the project.
 
-Feel free to contribute in any way you like, we're always open to new ideas and approaches. You can also take a look at the [issue tracker](https://github.com/creme-ml/creme/issues) and the [icebox](https://github.com/creme-ml/creme/projects/2) to see if anything takes your fancy. Please check out the [contribution guidelines](https://github.com/creme-ml/creme/blob/master/CONTRIBUTING.md) if you want to bring modifications to the code base. You can view the list of people who have contributed [here](https://github.com/creme-ml/creme/graphs/contributors).
+Both projects will stop active development. The code for both projects will remain publicly available, although development will only focus on minor maintenance during a transition period. The architecture of the new package is very similar to that of creme. It will focus on single-instance incremental models.
+
+We encourage users to use River instead of creme. We understand that this transition will require an extra effort in the short term from current users. However, we believe that the result will be better for everyone in the long run.
+
+You will still be able to install and use `creme` as well as `scikit-multiflow`. Both projects will remain on PyPI, conda-forge and GitHub.

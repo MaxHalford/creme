@@ -4,20 +4,20 @@
 
 <p align="center">
   <!-- Travis -->
-  <a href="https://travis-ci.org/creme-ml/creme">
-    <img src="https://img.shields.io/travis/creme-ml/creme/master.svg?style=flat-square" alt="travis">
+  <a href="https://travis-ci.org/MaxHalford/creme">
+    <img src="https://img.shields.io/travis/MaxHalford/creme/master.svg?style=flat-square" alt="travis">
   </a>
   <!-- Codecov -->
-  <a href="https://codecov.io/gh/creme-ml/creme">
-    <img src="https://img.shields.io/codecov/c/gh/creme-ml/creme.svg?style=flat-square" alt="codecov">
+  <a href="https://codecov.io/gh/MaxHalford/creme">
+    <img src="https://img.shields.io/codecov/c/gh/MaxHalford/creme.svg?style=flat-square" alt="codecov">
   </a>
   <!-- Documentation -->
-  <a href="https://creme-ml.github.io/">
-    <img src="https://img.shields.io/website?label=documentation&style=flat-square&url=https%3A%2F%2Fcreme-ml.github.io%2F" alt="documentation">
+  <a href="https://MaxHalford.github.io/">
+    <img src="https://img.shields.io/website?label=documentation&style=flat-square&url=https%3A%2F%2FMaxHalford.github.io%2F" alt="documentation">
   </a>
   <!-- Gitter -->
-  <a href="https://gitter.im/creme-ml/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link">
-    <img src="https://img.shields.io/gitter/room/creme-ml/community?color=blueviolet&style=flat-square" alt="gitter">
+  <a href="https://gitter.im/MaxHalford/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link">
+    <img src="https://img.shields.io/gitter/room/MaxHalford/community?color=blueviolet&style=flat-square" alt="gitter">
   </a>
   <!-- PyPI -->
   <a href="https://pypi.org/project/creme">
@@ -37,33 +37,17 @@
   <code>creme</code> is a Python library for <a href="https://www.wikiwand.com/en/Online_machine_learning">online machine learning</a>. All the tools in the library can be updated with a single observation at a time, and can therefore be used to <b>learn from streaming data</b>.
 </p>
 
-## 🤗 Merger announcement
+## creme + scikit-multiflow = River
 
-### TLDR
-
-[creme](https://creme-ml.github.io/) and [scikit-multiflow](https://scikit-multiflow.github.io/) are merging. A new package will result from this merge. Both development teams will work together on this new package.
-
-### Why?
+[creme](https://MaxHalford.github.io/) and [scikit-multiflow](https://scikit-multiflow.github.io/) are merging into a new project called [River](https://github.com/online-ml/river/).
 
 We feel that both projects share the same vision. We believe that pooling our resources instead of duplicating work will benefit both sides. We are also confident that this will benefit both communities. There will be more people working on the new project, which will allow us to distribute work more efficiently. We will thus be able to work on more features and improve the overall quality of the project.
 
-### How does this affect each project?
+Both projects will stop active development. The code for both projects will remain publicly available, although development will only focus on minor maintenance during a transition period. The architecture of the new package is very similar to that of creme. It will focus on single-instance incremental models.
 
-Both projects will stop active development once the new package is released. The code for both projects will remain publicly available, although development will only focus on minor maintenance during a transition period. During this transition period, most of the functionality of both projects will be made available in the new package.
-
-The architecture of the new package is more Pythonic. It will focus on single-instance incremental models. The new API reflects these changes.
-
-Detailed information on the new architecture and API will be available with the release of the new package.
-
-### How does this affect users?
-
-We encourage users to move towards the new package when possible. We understand that this transition will require an extra effort in the short term from current users. However, we believe that the result will be better for everyone in the long run.
+We encourage users to use River instead of creme. We understand that this transition will require an extra effort in the short term from current users. However, we believe that the result will be better for everyone in the long run.
 
 You will still be able to install and use `creme` as well as `scikit-multiflow`. Both projects will remain on PyPI, conda-forge and GitHub.
-
-### When?
-
-The target date for the first release: **2nd half of October 2020**.
 
 ## ⚡️Quickstart
 
@@ -130,13 +114,13 @@ There are [wheels available](https://pypi.org/project/creme/#files) for Linux, M
 You can install the latest development version from GitHub as so:
 
 ```sh
-pip install git+https://github.com/creme-ml/creme --upgrade
+pip install git+https://github.com/MaxHalford/creme --upgrade
 ```
 
 Or, through SSH:
 
 ```sh
-pip install git+ssh://git@github.com/creme-ml/creme.git --upgrade
+pip install git+ssh://git@github.com/MaxHalford/creme.git --upgrade
 ```
 
 ## 🧠 Philosophy
@@ -167,13 +151,13 @@ Here are some benefits of using `creme` (and online machine learning in general)
 - Feature extraction and selection
 - Online statistics and metrics
 - Built-in datasets
-- And [much more](https://creme-ml.github.io/content/api.html)
+- And [much more](https://MaxHalford.github.io/content/api.html)
 
 ## 🔗 Useful links
 
-- [Documentation](https://creme-ml.github.io/)
-- [Benchmarks](https://github.com/creme-ml/creme/tree/master/benchmarks)
-- [Issue tracker](https://github.com/creme-ml/creme/issues)
+- [Documentation](https://MaxHalford.github.io/)
+- [Benchmarks](https://github.com/MaxHalford/creme/tree/master/benchmarks)
+- [Issue tracker](https://github.com/MaxHalford/creme/issues)
 - [Package releases](https://pypi.org/project/creme/#history)
 
 ## 👁️ Media
@@ -185,7 +169,7 @@ Here are some benefits of using `creme` (and online machine learning in general)
 
 ## 👍 Contributing
 
-Feel free to contribute in any way you like, we're always open to new ideas and approaches. You can also take a look at the [issue tracker](https://github.com/creme-ml/creme/issues) and the [icebox](https://github.com/creme-ml/creme/projects/2) to see if anything takes your fancy. Please check out the [contribution guidelines](https://github.com/creme-ml/creme/blob/master/CONTRIBUTING.md) if you want to bring modifications to the code base. You can view the list of people who have contributed [here](https://github.com/creme-ml/creme/graphs/contributors).
+Feel free to contribute in any way you like, we're always open to new ideas and approaches. You can also take a look at the [issue tracker](https://github.com/MaxHalford/creme/issues) and the [icebox](https://github.com/MaxHalford/creme/projects/2) to see if anything takes your fancy. Please check out the [contribution guidelines](https://github.com/MaxHalford/creme/blob/master/CONTRIBUTING.md) if you want to bring modifications to the code base. You can view the list of people who have contributed [here](https://github.com/MaxHalford/creme/graphs/contributors).
 
 ## 💬 Citation
 
@@ -195,7 +179,7 @@ Please use the following citation if you want to reference creme in a scientific
 @software{creme,
   title = {{creme}, a {P}ython library for online machine learning},
   author = {Halford, Max and Bolmier, Geoffrey and Sourty, Raphael and Vaysse, Robin and Zouitine, Adil},
-  url = {https://github.com/creme-ml/creme},
+  url = {https://github.com/MaxHalford/creme},
   version = {0.6.1},
   date = {2020-06-10},
   year = {2019}
@@ -206,4 +190,4 @@ Note that in the future we will probably publish a dedicated research paper.
 
 ## 📝 License
 
-`creme` is free and open-source software licensed under the [3-clause BSD license](https://github.com/creme-ml/creme/blob/master/LICENSE).
+`creme` is free and open-source software licensed under the [3-clause BSD license](https://github.com/MaxHalford/creme/blob/master/LICENSE).

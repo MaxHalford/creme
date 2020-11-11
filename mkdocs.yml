@@ -1,12 +1,12 @@
 # Project information
 site_name: creme
 site_description: A Material Design theme for MkDocs
-site_author: The creme developers
-site_url: https://creme-ml.github.io/
+site_author: Max Halford
+site_url: https://maxhalford.github.io/creme
 
 # Repository
-repo_name: creme-ml/creme
-repo_url: https://github.com/creme-ml/creme
+repo_name: MaxHalford/creme
+repo_url: https://github.com/MaxHalford/creme
 
 # Copyright
 copyright: Copyright &copy; 2019 - 2020
@@ -32,7 +32,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/creme-ml/creme
+      link: https://github.com/MaxHalford/creme
 
 # Google Analytics
 google_analytics:

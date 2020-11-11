@@ -21,7 +21,7 @@ except ImportError:
 NAME = 'creme'
 DESCRIPTION = 'Online machine learning in Python'
 LONG_DESCRIPTION_CONTENT_TYPE = 'text/markdown'
-URL = 'https://github.com/creme-ml/creme'
+URL = 'https://github.com/MaxHalford/creme'
 EMAIL = 'maxhalford25@gmail.com'
 AUTHOR = 'Max Halford'
 REQUIRES_PYTHON = '>=3.6.0'
