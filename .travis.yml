@@ -66,14 +66,13 @@ jobs:
       - git config --global user.email "maxhalford25@gmail.com"
       - git config --global user.name "MaxHalford"
       - git config --global push.default matching
-      - git clone https://${GH_TOKEN}@github.com/MaxHalford/MaxHalford.github.io.git MaxHalford.github.io
-      - cd MaxHalford.github.io
+      - git clone https://${GH_TOKEN}@github.com/MaxHalford/maxhalford.github.io.git maxhalford.github.io
+      - cd maxhalford.github.io
       - rm -r *
       - cp -r ../site/* .
       - git add -A
       - git commit --allow-empty -m "Travis build number $TRAVIS_BUILD_NUMBER"
       - git push --set-upstream origin master
-    if: tag IS present
 
 env:
   global:
