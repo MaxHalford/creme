@@ -113,7 +113,7 @@ def test_finite_differences(lm, dataset):
 
 
 def test_one_many_consistent():
-    """Checks that using fit_one or learn_many produces the same result."""
+    """Checks that using fit_one or fit_many produces the same result."""
 
     X = pd.read_csv(datasets.TrumpApproval().path)
     Y = X.pop('five_thirty_eight')
@@ -124,26 +124,26 @@ def test_one_many_consistent():
 
     many = lm.LinearRegression()
     for xb, yb in zip(np.array_split(X, len(X)), np.array_split(Y, len(Y))):
-        many.learn_many(xb, yb)
+        many.fit_many(xb, yb)
 
     for i in X:
         assert math.isclose(one.weights[i], many.weights[i])
 
 
 def test_shuffle_columns():
-    """Checks that learn_many works identically whether columns are shuffled or not."""
+    """Checks that fit_many works identically whether columns are shuffled or not."""
 
     X = pd.read_csv(datasets.TrumpApproval().path)
     Y = X.pop('five_thirty_eight')
 
     normal = lm.LinearRegression()
     for xb, yb in zip(np.array_split(X, 10), np.array_split(Y, 10)):
-        normal.learn_many(xb, yb)
+        normal.fit_many(xb, yb)
 
     shuffled = lm.LinearRegression()
     for xb, yb in zip(np.array_split(X, 10), np.array_split(Y, 10)):
         cols = np.random.permutation(X.columns)
-        shuffled.learn_many(xb[cols], yb)
+        shuffled.fit_many(xb[cols], yb)
 
     for i in X:
         assert math.isclose(normal.weights[i], shuffled.weights[i])
@@ -159,7 +159,7 @@ def test_add_remove_columns():
     for xb, yb in zip(np.array_split(X, 10), np.array_split(Y, 10)):
         # Pick half of the columns at random
         cols = np.random.choice(X.columns, len(X.columns) // 2, replace=False)
-        lin_reg.learn_many(xb[cols], yb)
+        lin_reg.fit_many(xb[cols], yb)
 
 
 def test_lin_reg_sklearn_coherence():
