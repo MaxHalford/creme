@@ -8,12 +8,12 @@ import pandas as pd
 from sklearn import linear_model as sklm
 import pytest
 
-from river import datasets
-from river import linear_model as lm
-from river import optim
-from river import preprocessing
-from river import stream
-from river import utils
+from creme import datasets
+from creme import linear_model as lm
+from creme import optim
+from creme import preprocessing
+from creme import stream
+from creme import utils
 
 
 def iter_perturbations(keys, n=10):
@@ -163,7 +163,7 @@ def test_add_remove_columns():
 
 
 def test_lin_reg_sklearn_coherence():
-    """Checks that the sklearn and river implementations produce the same results."""
+    """Checks that the sklearn and creme implementations produce the same results."""
 
     class SquaredLoss:
         """sklearn removes the leading 2 from the gradient of the squared loss."""
@@ -187,7 +187,7 @@ def test_lin_reg_sklearn_coherence():
 
 
 def test_log_reg_sklearn_coherence():
-    """Checks that the sklearn and river implementations produce the same results."""
+    """Checks that the sklearn and creme implementations produce the same results."""
 
     ss = preprocessing.StandardScaler()
     cr = lm.LogisticRegression(optimizer=optim.SGD(.01))
@@ -205,7 +205,7 @@ def test_log_reg_sklearn_coherence():
 
 
 def test_perceptron_sklearn_coherence():
-    """Checks that the sklearn and river implementations produce the same results."""
+    """Checks that the sklearn and creme implementations produce the same results."""
 
     ss = preprocessing.StandardScaler()
     cr = lm.Perceptron()
