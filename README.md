@@ -11,10 +11,6 @@
   <a href="https://codecov.io/gh/MaxHalford/creme">
     <img src="https://img.shields.io/codecov/c/gh/MaxHalford/creme.svg?style=flat-square" alt="codecov">
   </a>
-  <!-- Documentation -->
-  <a href="https://maxhalford.github.io/creme">
-    <img src="https://img.shields.io/website?label=documentation&style=flat-square&url=https%3A%2F%2FMaxHalford.github.io%2F" alt="documentation">
-  </a>
   <!-- PyPI -->
   <a href="https://pypi.org/project/creme">
     <img src="https://img.shields.io/pypi/v/creme.svg?label=release&color=blue&style=flat-square" alt="pypi">
